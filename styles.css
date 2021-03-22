@@ -3,10 +3,11 @@ body{
 }
 
 .backgroundimagemain{
-    background-image: url(images/background\ circles.png);
+    background-image: url(images/background.png);
     background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
+    background-size:cover;
+    /* background-image: linear-gradient(to top, rgb(5, 15, 71), rgb(52, 64, 167));
+    background-image: radial-gradient(rgb(52, 64, 167) 25%,rgb(5, 15, 71)); */
     position: fixed;
     top: 0px;
     right: 0px;
@@ -15,43 +16,59 @@ body{
     z-index: -1;
 }
 
+.navContainer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
+    margin-top: 100px;
 }
-header{
-    background-color: rgba(50,114,171);
-    color: white;
+.mainHead{
+    background-color: rgba(52, 64, 167, 0);
+    color: orange;
 
-    grid-column-start: 3;
-    grid-column-end: 11;
-    text-align: center;
-    
-}
-nav {
     grid-column-start: 3;
     grid-column-end: 11;
     grid-row-start: 2;
     grid-row-end: 3;
+    text-align: center;
+    padding: 5px 0px 20px 0px;
+    margin: 5px 0px 20px 0px;
+}
+.mainHead h1{
+    font-size: 3em;
+}
+.mainNav{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
     justify-self: center;
     padding: 10px;
-    margin: 5px;
+    /* margin: 5px; */
     border: 2px solid rgba(50,114,171);
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(4,8,34,1);
 }
-.topnav {
+.topnav{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: rgba(255,255,255,255);
+    width: 100%;
 }
-.topnav li {
+.topnav li{
     float: left;
 }
-.topnav li:hover {
+.topnav li:hover{
     background-color: rgba(50,114,171);
 }
 .topnav li a{
@@ -64,3 +81,140 @@ nav {
     /* color: rgba(50,114,171); */
     color: white;
 }
+
+.topic{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    line-height: 1.5em;
+    word-spacing: 1px;
+
+    color: white;
+}
+.leftsection{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.rightsection{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.centersection{
+    grid-column-start: 1;
+    grid-column-end:5;
+}
+.tightcentersection{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+/* Timeline code found from: https://codepen.io/hassan-kamal/pen/NNvYEQ?editors=1100 accessed 22/03/2021 */
+.timelinecontainer {
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ .timelinecontainer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+ }
+ 
+.timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+ }
+ 
+ .timeline-block-right {
+    float: right;
+ }
+ 
+ .timeline-block-left {
+    float: left;
+    direction: rtl
+ }
+ 
+ .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #3638af;
+    margin-top: 10px;
+    z-index: 1
+ }
+ 
+ .timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: rgb(238, 238, 238)
+ }
+ 
+ .timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
+ }
+ 
+ .timeline-content span {
+    font-size: 17px;
+    color: #dddddd;
+ }
+ 
+ .timeline-content p {
+    font-size: 16px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: rgb(206, 206, 206);
+ }
+ 
+ 
+ @media screen and (max-width: 768px) {
+    .container:before {
+       left: 8px;
+       width: 2px;
+    }
+    .timeline-block {
+       width: 100%;
+       margin-bottom: 30px;
+    }
+    .timeline-block-right {
+       float: none;
+    }
+ 
+    .timeline-block-left {
+       float: none;
+       direction: ltr;
+    }
+ }
+ /* end of timeline code */

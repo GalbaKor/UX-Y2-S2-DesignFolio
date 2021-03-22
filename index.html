@@ -8,55 +8,124 @@
     <title>UX-CTS Simply Sleep</title>
 </head>
 <body>
-    <div class="backgroundimagemain zindexlow"></div>
-    <div class="container">
-
-        <header class="">
-            <h1>Simply Sleep</h1> 
-            <h3>A student targeted sleep and habit tracker that suggests changes to your lifestyle to help you sleep better</h3>
-        </header>
-
-        <nav class="mainnav zindexhigh">
+    <div class="backgroundimagemain"></div>
+    <div class="navContainer">
+        <nav class="mainNav zindexhigh">
             <ul class="topnav">
-                <li><a href="#" onclick="ideationClick()">Home</a></li>
-                <li><a href="#" onclick="elevatorClick()">Groupwork Stage</a></li>
-                <li><a href="#" onclick="interviewClick()">Final Pitch</a></li>
-                <li><a href="#" onclick="personaClick()">Design Folio</a></li>
-                <li><a href="#" onclick="mapClick()">Final Prototype</a></li> <!-- make final prototype a different colour to stand out - click me! -->
-                <li><a href="#" onclick="SWOTClick()">Evaluation</a></li>
+                <li><a href="#" onclick="openTopic('home')">Home</a></li>
+                <li><a href="#" onclick="openTopic('groupworkstage')">Groupwork Stage</a></li>
+                <li><a href="#" onclick="openTopic('finalpitch')">Final Pitch</a></li>
+                <li><a href="#" onclick="openTopic('designfolio')">Design Folio</a></li>
+                <li><a href="#" onclick="openTopic('finalprototype')">Final Prototype</a></li> <!-- make final prototype a different colour to stand out - click me! -->
+                <li><a href="#" onclick="openTopic('evaluation')">Evaluation</a></li>
             </ul>
-        </nav>
+        </nav> 
+    </div>
+    <div class="container">
+        <header class="mainHead">
+            <h1>Simply Sleep</h1> 
+            <h3>A student targeted sleep and habit tracker that suggests <br>changes to your lifestyle to help you sleep better</h3>
+        </header>
         
-        
-        <!-- Link to old group website + group presentation -->
-        <article id="" class="">
+       
+        <!-- Home page with basic information, elevator pitch -->
+        <article id="home" class="topic">
+            <section class="centersection"><h2>Introduction<br><h3><i>What is Simply Sleep?</i></h3></h2></section>
+            <section class="tightcentersection">
+                <p>Hi, we are Simply Sleep - a student targeted sleep and habit tracker that not only tracks sleep, but enables tracking of sleep affecting habits such as caffeine and exercise. 
+                    <br><br>Unlike other competing apps, Simply Sleep will then offer recommendations for how you can achieve a routine fit for you.
+                    <br><br>Discover what affects your sleep - from weather to screentime - and receive advice tailored for you.
+                    <br><br>With numerous automated and manual tracking features, finding your ideal routine has never been easier!
+                    <br><br>
+                </p>
+            </section>
+            <section class="centersection"><h2>Project Timeline</h2></section>
+            <div class="timelinecontainer centersection">
 
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                       <h3>Groupwork</h3>
+                       <span>Ideation Creation</span>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                 </div>
+              
+                 <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                       <h3>Groupwork</h3>
+                       <span>Data collection</span>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                 </div>
+
+                 <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                       <h3>Groupwork</h3>
+                       <span>Data collection</span>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                 </div>
+
+                 <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                       <h3>Groupwork</h3>
+                       <span>Data collection</span>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                    </div>
+                 </div>
+
+            </div>
+        </article>
+
+        <!-- Link to old group website + group presentation -->
+        <article id="groupworkstage" class="topic">
+            <section class="centersection"><h2>Group Stage</br><h3>From ideation to interviews</h3></h2></section>
+            <section class="">
+                <p></p>
+            </section>
         </article>
 
         <!-- Individual final pitch presentation -->
-        <article id="" class="">
-            
+        <article id="finalpitch" class="topic">
+            <section class="centersection"><h2>The Final Pitch</br><h3>Refined with herbs and spices</h3></h2></section>
+            <section class="">
+                <p></p>
+            </section>
         </article>
 
         <!-- Design folio containing: User research, prototyping, testing processes; 
             inspiration, design ideas, sketches, lo-fi prototypes, user testing documentation, 
             concept development documentation, bibliography of existing apps-->
-        <article id="" class="">
-            
+        <article id="designfolio" class="topic">
+            <section class="centersection"><h2>Design Folio</br><h3>The steps taken to create Simply Sleep</h3></h2></section>
+            <section class="">
+                <p></p>
+            </section>
         </article>
 
         <!-- Final Prototype (potential 1-min vid of it in action embedded from InVision/Figma)-->
-        <article id="" class="">
-            
+        <article id="finalprototype" class="topic">
+            <section class="centersection"><h2>The Final Prototype</br><h3>Every chrome tab led to this</h3></h2></section>
+            <section class="">
+                <p></p>
+            </section>
         </article>
 
 
         <!-- Individual Project Evaluation 1500-2000 word PDF - 
             summarize and critically evaluate your contribution to the project, 
             refer to academic sources and link to design folio materials -->
-        <article id="" class="">
-
+        <article id="evaluation" class="topic">
+            <section class="centersection"><h2>Personal Evaluation</br><h3>My thoughts and contributions.</h3></h2></section>
+            <section class="">
+                <p></p>
+            </section>
         </article>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
