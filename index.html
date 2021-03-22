@@ -11,14 +11,22 @@
     <div class="backgroundimagemain"></div>
     <div class="navContainer">
         <nav class="mainNav zindexhigh">
-            <ul class="topnav">
+            <!-- <ul class="topnav">
                 <li><a href="#" onclick="openTopic('home')">Home</a></li>
                 <li><a href="#" onclick="openTopic('groupworkstage')">Groupwork Stage</a></li>
                 <li><a href="#" onclick="openTopic('finalpitch')">Final Pitch</a></li>
                 <li><a href="#" onclick="openTopic('designfolio')">Design Folio</a></li>
-                <li><a href="#" onclick="openTopic('finalprototype')">Final Prototype</a></li> <!-- make final prototype a different colour to stand out - click me! -->
+                <li><a href="#" onclick="openTopic('finalprototype')">Final Prototype</a></li>
                 <li><a href="#" onclick="openTopic('evaluation')">Evaluation</a></li>
-            </ul>
+            </ul> -->
+            <div class="btn-group">
+                <button class="button activeButton" onclick="openTopic(event, 'home')">Home</button>
+                <button class="button" onclick="openTopic(event, 'groupworkstage')"> Groupwork</button>
+                <button class="button" onclick="openTopic(event, 'finalpitch')">Final Pitch</button>
+                <button class="button" onclick="openTopic(event, 'designfolio')">Design Folio</button>
+                <button class="button" onclick="openTopic(event, 'finalprototype')">Final Prototype</button>
+                <button class="button" onclick="openTopic(event, 'evaluation')">Evaluation</button>
+              </div>
         </nav> 
     </div>
     <div class="container">
@@ -82,7 +90,7 @@
         </article>
 
         <!-- Link to old group website + group presentation -->
-        <article id="groupworkstage" class="topic">
+        <article id="groupworkstage" class="topic" style="display:none">
             <section class="centersection"><h2>Group Stage</br><h3>From ideation to interviews</h3></h2></section>
             <section class="">
                 <p></p>
@@ -90,7 +98,7 @@
         </article>
 
         <!-- Individual final pitch presentation -->
-        <article id="finalpitch" class="topic">
+        <article id="finalpitch" class="topic" style="display:none">
             <section class="centersection"><h2>The Final Pitch</br><h3>Refined with herbs and spices</h3></h2></section>
             <section class="">
                 <p></p>
@@ -100,7 +108,7 @@
         <!-- Design folio containing: User research, prototyping, testing processes; 
             inspiration, design ideas, sketches, lo-fi prototypes, user testing documentation, 
             concept development documentation, bibliography of existing apps-->
-        <article id="designfolio" class="topic">
+        <article id="designfolio" class="topic" style="display:none">
             <section class="centersection"><h2>Design Folio</br><h3>The steps taken to create Simply Sleep</h3></h2></section>
             <section class="">
                 <p></p>
@@ -108,7 +116,7 @@
         </article>
 
         <!-- Final Prototype (potential 1-min vid of it in action embedded from InVision/Figma)-->
-        <article id="finalprototype" class="topic">
+        <article id="finalprototype" class="topic" style="display:none">
             <section class="centersection"><h2>The Final Prototype</br><h3>Every chrome tab led to this</h3></h2></section>
             <section class="">
                 <p></p>
@@ -119,7 +127,7 @@
         <!-- Individual Project Evaluation 1500-2000 word PDF - 
             summarize and critically evaluate your contribution to the project, 
             refer to academic sources and link to design folio materials -->
-        <article id="evaluation" class="topic">
+        <article id="evaluation" class="topic" style="display:none">
             <section class="centersection"><h2>Personal Evaluation</br><h3>My thoughts and contributions.</h3></h2></section>
             <section class="">
                 <p></p>

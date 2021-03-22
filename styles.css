@@ -82,6 +82,30 @@ body{
     color: white;
 }
 
+/* Button section instead of list nav https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_group_border */
+.btn-group .button {
+    background-color: rgba(4,8,34,1); /* Green */
+    border: 1px solid rgba(50,114,171);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  .btn-group .button:hover {
+    background-color: rgba(50,114,171,1);
+  }
+  .btn-group .activeButton{
+    background-color: rgba(50,114,171,1);
+  }
+
 .topic{
     grid-column-start: 3;
     grid-column-end: 11;
