@@ -1,5 +1,12 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ 
+}
+body::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display:none;
+    height: 0px;
+    width: 0px;
 }
 
 .backgroundimagemain{
