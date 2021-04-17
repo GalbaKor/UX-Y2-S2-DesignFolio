@@ -143,9 +143,23 @@ body::-webkit-scrollbar { /* Chrome, Safari, Opera */
     grid-column-start: 1;
     grid-column-end:5;
 }
+.centersection embed{
+    width: 100%;
+    height: 1000px;
+}
 .tightcentersection{
     grid-column-start: 2;
     grid-column-end: 4;
+}
+
+.clickImage img{
+    border-radius: 15%;
+    transition: .3s ease-in-out;
+}
+.clickImage img:hover{
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
 }
 
 
